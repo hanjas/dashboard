@@ -1,38 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'ProximaNova';
+}
+.shadow {
+  box-shadow: 0px 4px 5px 1.5px #e4e4e4;
+}
+.active {
+  background: #284FAF !important;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: #e0e0e0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Main {
+  width: 1600px;
+  margin: 0 auto;
+  /* height: 80vh; */
+  display: flex;
+  background: #fff;
+}
+.Sidebar {
+  width: 300px;
+  color: #fff;
+  position: relative;
+  background: #284FAF;
+}
+.Sidebar_top {
+  padding-top: 200px;
+  padding-left: 100px;
+}
+.Sidebar_top div {
+  margin: 25px 0;
+}
+.Sidebar_logout {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+}
+.Main_container {
+  flex: 2;
+  margin: 0 40px;
+}
+.Main_header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.Header_left {
+  font-size: 17px;
+  font-weight: 500;
+}
+.Header_right {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+.Header_rightIcons {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.notIconCount {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  font-size: 8px;
+  font-weight: 500;
+  background: #FF7A7A;
+  color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.user {
+  overflow: hidden;
+}
+.user img {
+  transform: scale(1.2);
+}
+.Card_details {
+  width: 490px;
+  padding: 40px 0;
+  /* background: gray; */
+}
+.Card_header {
+  display: flex;
+  justify-content: space-between;
+}
+.Card_headerTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Card_addCard {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.Addcard_icon {
+  border: 1px solid #b8b8b8;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  color: #b8b8b8;
+}
+.Card_body {
+  display: flex;
+  margin-top: 33px;
+  /* justify-content: center; */
+}
+.Card_prevBtn, .Card_nextBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  /* width: 30px; */
+}
+.Card_btn {
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 1.5px #d3d3d3;
 }
 
-.App-link {
-  color: #61dafb;
+.Card_cardPreview {
+  position: relative;
+  background: #284FAF;
+  border-radius: 25px;
+  padding: 20px;
+  color: #fff;
+  width: 320px;
+  overflow: hidden;
+  /* height: 250px; */
+}
+.Card_ellipse {
+  position: absolute;
+  top: -65px;
+  right: -90px;
+  width: 240px;
+  height: 240px;
+  border-radius: 100% 100% 90% 90%;
+  background: #305bc4;
+}
+.Card_content {
+  position: relative;
+}
+.Card_top {
+  display: flex;
+  justify-content: space-between;
+}
+.Card_chip {
+  margin-top: 15px;
+}
+.Card_center {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.Card_number {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+.Card_validity {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.Card_validityText {
+  font-size: 7px;
+  margin-right: 5px;
+  letter-spacing: normal;
+}
+.Card_footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.Card_bal {
+  position: relative;
+  width: 100px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.Card_balText {
+  position: absolute; 
+  top: -10px;
+  font-size: 9px;
+  font-weight: normal;
+}
+.Card_cardsButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card_cardsButtons div {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #c0c0c0;
+  margin: 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Transaction {
+  width: 500px;
+}
+.Trans_header {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Trans_list {
+  height: 380px;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 40px;
+}
+.Trans_listItem {
+  display: flex;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.Trans_listIcon {
+  background: #52B3F9;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Trans_listIcon img {
+  transform: scale(1.5);
+}
+.Trans_listName {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+.Trans_listNameSub {
+  font-size: 10px;
+}
+.Trans_listTime {
+  margin-left: 50px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.Trans_listAmount {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80px;
+}
+.Trans_listAmountType img {
+  transform: scale(1.5);
+}
+.Trans_listAmountTypeNumber {
+  margin-left: 10px;
+}
+.cart {
+  background: #FA9778;
+}
+.money {
+  background: #8EDCA4;
+}
+.recharge {
+  background: #F97A7A;
+}
+.Main_body {
+  display: flex;
+}
+.Main_bodyLeft {
+  margin-right: 40px;
+}
+.Line_graph {
+  margin: 0 auto;
 }
