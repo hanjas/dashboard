@@ -9,11 +9,11 @@ import lessThanImg from '../public/LessThan.svg'
 export default function CardInfo() {
     return (
         <div className="Card_details">
-            <div className="Card_header">
-                <div className="Card_headerTitle">Your Cards Details</div>
-                <div className="Card_addCard">
+            <div className="Portion_header">
+                <div className="Portion_hTitle">Your Cards Details</div>
+                <div className="Portion_hRight">
                     <div className="Addcard_icon">+</div>
-                    Add card
+                    <div className="Card_addCar">Add Card</div>
                 </div>
             </div>
             <div className="Card_body">

@@ -17,21 +17,72 @@
   height: 100vh;
 }
 .Main {
-  width: 1600px;
+  width: 1500px;
   margin: 0 auto;
   /* height: 80vh; */
   display: flex;
   background: #fff;
 }
 .Sidebar {
-  width: 300px;
+  /* width: 300px; */
   color: #fff;
   position: relative;
   background: #284FAF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  position: relative;
 }
-.Sidebar_top {
+.Sidebar_logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 140px;
+}
+.Sidebar_logo img{
+  transform: scale(1.2);
+}
+.Sidebar_list {
+  margin-top: 80px;
+}
+.Sidebar_list div {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 140px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Sidebar_list div:first-child {
+  background: #183E99;
+}
+.Sidebar_list div:hover {
+  background: #3759a8;
+  cursor: pointer;
+}
+.Sidebar_list div img {
+  margin-right: 10px;
+}
+.Sidebar_logout {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  width: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Sidebar_logout img {
+  margin-right: 10px;
+}
+/* .Sidebar_top {
   padding-top: 200px;
   padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .Sidebar_top div {
   margin: 25px 0;
@@ -40,13 +91,13 @@
   position: absolute;
   bottom: 50px;
   left: 80px;
-}
+} */
 .Main_container {
   flex: 2;
   margin: 0 40px;
 }
 .Main_header {
-  margin-top: 40px;
+  margin: 40px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -91,7 +142,7 @@
 }
 .Card_details {
   width: 490px;
-  padding: 40px 0;
+  /* padding: 40px 0; */
   /* background: gray; */
 }
 .Card_header {
@@ -117,10 +168,12 @@
   align-items: center;
   border-radius: 2px;
   color: #b8b8b8;
+  margin-right: 10px;
 }
 .Card_body {
   display: flex;
-  margin-top: 33px;
+  padding-top: 20px;
+  margin-top: 30px;
   /* justify-content: center; */
 }
 .Card_prevBtn, .Card_nextBtn {
@@ -219,10 +272,9 @@
   background: #c0c0c0;
   margin: 0 5px;
 }
-
-
 .Transaction {
   width: 500px;
+  margin-top: 40px;
 }
 .Trans_header {
   font-size: 16px;
@@ -297,10 +349,163 @@
 }
 .Main_body {
   display: flex;
+  /* justify-content: space-evenly; */
 }
 .Main_bodyLeft {
   margin-right: 40px;
 }
 .Line_graph {
   margin: 0 auto;
+}
+.Portion_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 30px; */
+}
+.Portion_hTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Portion_hRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Date_picker {
+  position: relative;
+}
+.Date_text {
+  left: 8px !important;
+  display: flex;
+}
+.Date_picker:hover {
+  text-decoration: underline;
+}
+.Date_text img {
+  margin-left: 10px;
+}
+.Date_datePicker {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Date_picker div input {
+  /* opacity: 0.3; */
+  opacity: 0;
+  width: 80px;
+}
+.line {
+  fill: none;
+  stroke: #82B5ED;
+  stroke-width: 3.8;
+}
+.line2 {
+  fill: none;
+  stroke: #F97A7A;
+  stroke-width: 3.8;
+}
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+.domain {
+  display: none;
+}
+.tick line {
+  width: 100px;
+}
+.IncomeExpence {
+  display: flex;
+  justify-content: center;
+}
+.IncomeExpence_box {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.IncomeExpence_boxItem {
+  display: flex;
+}
+.IncomeExpence_boxItemIcon {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid grey; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 2px #eeeeee;
+}
+.IncomeExpence_boxItemIcon > img {
+  margin-bottom: 3px;
+}
+.IncomeExpence_boxAmountBox {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: baseline; */
+  flex-direction: column;
+}
+.IncomeExpence_boxAmountText {
+  margin-bottom: 3px;
+  font-size: 9px;
+  font-weight: normal;
+}
+.IncomeExpence_boxAmount {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.Total_spend {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #F9F9F9;
+}
+.Totalspend_listItem {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 2px #eeeeee;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+.Totalspend_listItem div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Totalspend_listIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.Totalspend_listIcon img {
+  transform: scale(1.5);
+}
+.Totalspend_listName {
+  margin-left: 10px;
+  justify-content: flex-start !important;
+  flex: 2;
+}
+.Totalspend_list {
+  height: 300px;
+  overflow-y: auto;
+}
+.Total_spend main {
+  margin-top: 30px;
+}
+.Total_spendBodyL {
+  width: 250px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  float: left;
+  /* height: 350px; */
+  /* padding: 20px; */
+  margin-top: 60px;
 }

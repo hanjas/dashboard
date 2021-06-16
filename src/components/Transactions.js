@@ -9,7 +9,7 @@ import arrowGreen from '../public/ArrowGreen.svg';
 
 export default function Transactions() {
 
-    const [transList, setTransList] = useState([
+    const [transList] = useState([
         {
             maintitle: "Vehicle EMI",
             subtitle: "Maruthi Suzuki fincorp",

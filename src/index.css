@@ -21,3 +21,45 @@ code {
   src: url(./lib/fonts/proxima/ProximaNovaBold.otf);
   font-weight: 500;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px #777777; */
+  background: #E8E8E8;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  box-shadow: inset 0 0 2px #777777;
+  border-radius: 10px;
+}
+
+path {
+  /* stroke-width: 1.5px; */
+  transition: fill 250ms linear;
+  transition-delay: 150ms;
+}
+
+path:hover {
+  transition-delay: 0;
+}
