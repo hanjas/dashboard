@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {epochUtil} from '../utils/dateUtils';
+import { epochUtil } from 'epochutils'
 
 
 import cartImg from '../public/CartSmall.svg';

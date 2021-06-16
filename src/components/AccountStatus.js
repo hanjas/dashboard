@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {epochUtil} from '../utils/dateUtils';
+import { epochUtil } from 'epochutils'
 
 import GraphTemp from './GraphTemp';
 import DropDown from '../public/DropDown.svg';
